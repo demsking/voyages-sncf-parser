@@ -1,0 +1,38 @@
+{
+  "name": "voyages-sncf-parser",
+  "version": "1.0.0",
+  "description": "Parse a Voyages-SNCF confirmation email and extract data (customer, trips, prices)",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "htmlparser2": "^3.9.2",
+    "istanbul": "^0.4.5"
+  },
+  "devDependencies": {
+    "mocha": "^3.1.2"
+  },
+  "bin" : { 
+    "voyages-sncf-parser" : "./bin/voyages-sncf-parser"
+  },
+  "scripts": {
+    "test": "mocha tests/tests.js",
+    "coverage": "istanbul cover _mocha -- tests/tests.js -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/demsking/voyages-sncf-parser.git"
+  },
+  "keywords": [
+    "email",
+    "parser",
+    "sncf"
+  ],
+  "author": "Sébastien Demanou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/demsking/voyages-sncf-parser/issues"
+  },
+  "homepage": "https://github.com/demsking/voyages-sncf-parser#readme"
+}

@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+const path = require('path')
+const lib = require('../')
+
+const filename = path.join(process.cwd(), process.argv[2])
+const document = lib.parseFile(filename)
+
+console.log(JSON.stringify(document, null, 2))
